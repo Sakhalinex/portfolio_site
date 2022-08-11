@@ -1,1 +1,50 @@
-@import "../css/reset.css";/*# sourceMappingURL=main.css.map */
+@import "../css/reset.css";
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  background-color: #F1F1F1;
+  padding: 46px 0 46px 0;
+}
+.header .container {
+  padding: 0 30px;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__logo {
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+}
+.nav__logo::after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  background-color: #FDA300;
+  border-radius: 50%;
+  right: -13px;
+  bottom: -3px;
+}
+
+.menu {
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.menu__item {
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+}
+.menu__item-active a {
+  color: #606060;
+}/*# sourceMappingURL=main.css.map */

@@ -1,1 +1,54 @@
 @import "../css/reset.css";
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background-color: #F1F1F1;
+    padding: 46px 0 46px 0;
+    .container {
+        padding: 0 30px;
+        max-width: 1230px;
+        margin: 0 auto;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        font-size: 32px;
+        font-weight: 700;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            height: 8px;
+            width: 8px;
+            position: absolute;
+            background-color: #FDA300;
+            border-radius: 50%;
+            right: -13px;
+            bottom: -3px;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    column-gap: 50px;
+
+    &__item {
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+        align-items: flex-end;
+
+        &-active a {
+            color: #606060;
+        }
+    }
+}
