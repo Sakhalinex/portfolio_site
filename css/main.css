@@ -16,34 +16,35 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 .nav__logo {
   font-size: 32px;
   font-weight: 700;
   position: relative;
+  padding: 0 12px 3px 0;
 }
 .nav__logo::after {
   content: "";
   display: block;
   height: 8px;
   width: 8px;
-  position: absolute;
   background-color: #FDA300;
   border-radius: 50%;
-  right: -13px;
-  bottom: -3px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .menu {
   display: flex;
   -moz-column-gap: 50px;
-       column-gap: 50px;
+  column-gap: 50px;
 }
 .menu__item {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   display: flex;
-  align-items: flex-end;
 }
 .menu__item-active a {
   color: #606060;
