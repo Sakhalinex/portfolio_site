@@ -11,20 +11,17 @@ body {
   padding: 0 30px;
   max-width: 1230px;
   margin: 0 auto;
-}
-
-.nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-.nav__logo {
+.header__logo {
   font-size: 32px;
   font-weight: 700;
   position: relative;
   padding: 0 12px 3px 0;
 }
-.nav__logo::after {
+.header__logo::after {
   content: "";
   display: block;
   height: 8px;
@@ -36,16 +33,16 @@ body {
   bottom: 0;
 }
 
-.menu {
+.nav__list {
   display: flex;
   -moz-column-gap: 50px;
   column-gap: 50px;
 }
-.menu__item {
+.nav__item {
   font-size: 14px;
   font-weight: 500;
   display: flex;
 }
-.menu__item-active a {
+.nav__item-active a {
   color: #606060;
 }/*# sourceMappingURL=main.css.map */

@@ -7,17 +7,15 @@ body {
 .header {
     background-color: #F1F1F1;
     padding: 46px 0 46px 0;
+
     .container {
         padding: 0 30px;
         max-width: 1230px;
         margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
     }
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
 
     &__logo {
         font-size: 32px;
@@ -39,11 +37,12 @@ body {
     }
 }
 
-.menu {
-    display: flex;
-    -moz-column-gap: 50px;
+.nav {
+    &__list {
+        display: flex;
+        -moz-column-gap: 50px;
          column-gap: 50px;
-
+    }
     &__item {
         font-size: 14px;
         font-weight: 500;
