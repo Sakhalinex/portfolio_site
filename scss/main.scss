@@ -1,27 +1,33 @@
+// -----Imports-----
 @import "../css/reset.css";
 
+// -----General-----
 body {
     font-family: 'Poppins', sans-serif;
 }
 
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 1.875em;
+}
+
+// -----Header-----
 .header {
     background-color: #F1F1F1;
-    padding: 46px 0 46px 0;
+    padding: 2.875em 0 0 0;
 
     .container {
-        padding: 0 30px;
-        max-width: 1230px;
-        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
     }
 
     &__logo {
-        font-size: 32px;
+        font-size: 2em;
         font-weight: 700;
         position: relative;
-        padding: 0 12px 3px 0;
+        padding: 0 0.375em 0.0937em 0;
 
         &::after {
             content: '';
@@ -37,19 +43,52 @@ body {
     }
 }
 
+// Nav
 .nav {
     &__list {
         display: flex;
         -moz-column-gap: 50px;
          column-gap: 50px;
     }
+
     &__item {
-        font-size: 14px;
+        font-size: 0.875em;
         font-weight: 500;
         display: flex;
 
         &-active a {
             color: #606060;
         }
+    }
+}
+
+// -----Intro-----
+
+.intro {
+    padding: 4.73em 0 0 0;
+    background-color: #F1F1F1;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        -moz-column-gap: 30px;
+             column-gap: 30px;
+    }
+
+    &__text {
+        margin: 7.75em 0 0 0;
+    }
+
+    &__title {
+        font-size: 2.75em;
+        font-weight: 600;
+        line-height: 66px;
+    }
+
+    &__subtitle {
+        font-size: 0.875em;
+        margin: 1.4285em 0 0 0;
+        font-weight: 400;
+        line-height: 200%;
     }
 }
