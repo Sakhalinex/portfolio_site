@@ -131,4 +131,47 @@ body {
   text-decoration: underline;
   display: block;
   margin: 2.2222em 0 0 0;
+}
+
+.footer {
+  padding: 90px 0 90px 0;
+  text-align: center;
+}
+.footer__content {
+  max-width: 342.18px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__title {
+  font-size: 2.125em;
+  font-weight: 600;
+}
+.footer__subtitle {
+  font-size: 1.125em;
+  max-width: 16.4em;
+  line-height: 1.5;
+  margin-top: 48px;
+}
+.footer__btn {
+  background-color: #000;
+  color: #fff;
+  padding: 7px 22px;
+  border-radius: 40px;
+  margin-top: 40px;
+  font-size: 1.125em;
+  line-height: 1.5;
+}
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 79px;
+  width: 100%;
+}
+.footer__additionally {
+  color: #828282;
+  font-size: 0.875em;
+  line-height: 1.5;
+  margin-top: 40px;
 }/*# sourceMappingURL=main.css.map */
