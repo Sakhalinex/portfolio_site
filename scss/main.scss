@@ -107,7 +107,6 @@ body {
     line-height: 2;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     &__img {
         width: 68px;
@@ -117,21 +116,20 @@ body {
         font-size: 1.5em;
         font-weight: 600;
         text-transform: uppercase;
-        margin: 0.5625em 0 0 0;
+        margin: 0.9625em 0 0 0;
     }
 
     &__text {
         font-size: 0.875em;
         max-width: 26.4285em;
         margin: 0.3125em 0 0 0;
-        text-align: center;
     }
 }
 
 // -----Portfolio-----
 .portfolio {
     background-color: #F1F1F1;
-    padding: 90px 0 90px 0;
+    padding: 90px 0;
 
     &__title {
         text-align: center;
@@ -142,10 +140,13 @@ body {
     &__content {
         display: flex;
         align-items: center;
-        row-gap: 90px;
         flex-direction: column;
         margin: 68px 0 0 0;
     }
+}
+
+.project + .project {
+    margin-top: 90px;
 }
 
 .project {
@@ -161,7 +162,7 @@ body {
 // -----Footer-----
 
 .footer {
-    padding: 90px 0 90px 0;
+    padding: 90px 0;
     text-align: center;
 
     &__content {
@@ -185,13 +186,22 @@ body {
     }
 
     &__btn {
-        background-color: #000;
+        background-color: #070707;
         color: #fff;
         padding: 7px 22px;
         border-radius: 40px;
         margin-top: 40px;
         font-size: 1.125em;
         line-height: 1.5;
+        transition: 0.3s ease;
+
+        &:hover {
+            background-color: lighten(#070707, 50%);
+        }
+
+        &:active {
+            transform: scale(1.05);
+        }
     }
 
     &__social {

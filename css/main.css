@@ -90,7 +90,6 @@ body {
   line-height: 2;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .card__img {
   width: 68px;
@@ -99,18 +98,17 @@ body {
   font-size: 1.5em;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 0.5625em 0 0 0;
+  margin: 0.9625em 0 0 0;
 }
 .card__text {
   font-size: 0.875em;
   max-width: 26.4285em;
   margin: 0.3125em 0 0 0;
-  text-align: center;
 }
 
 .portfolio {
   background-color: #F1F1F1;
-  padding: 90px 0 90px 0;
+  padding: 90px 0;
 }
 .portfolio__title {
   text-align: center;
@@ -120,9 +118,12 @@ body {
 .portfolio__content {
   display: flex;
   align-items: center;
-  row-gap: 90px;
   flex-direction: column;
   margin: 68px 0 0 0;
+}
+
+.project + .project {
+  margin-top: 90px;
 }
 
 .project__link {
@@ -134,7 +135,7 @@ body {
 }
 
 .footer {
-  padding: 90px 0 90px 0;
+  padding: 90px 0;
   text-align: center;
 }
 .footer__content {
@@ -155,13 +156,20 @@ body {
   margin-top: 48px;
 }
 .footer__btn {
-  background-color: #000;
+  background-color: #070707;
   color: #fff;
   padding: 7px 22px;
   border-radius: 40px;
   margin-top: 40px;
   font-size: 1.125em;
   line-height: 1.5;
+  transition: 0.3s ease;
+}
+.footer__btn:hover {
+  background-color: #878787;
+}
+.footer__btn:active {
+  transform: scale(1.05);
 }
 .footer__social {
   display: flex;
