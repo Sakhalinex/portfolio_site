@@ -12,6 +12,18 @@ body {
     padding: 0 1.875em;
 }
 
+.services,
+.portfolio,
+.footer {
+    padding: 90px 0;
+
+    @media (max-width: 800px) {
+        padding: 60px 0;
+    }
+}
+
+
+
 // -----Header-----
 .header {
     background-color: #F1F1F1;
@@ -27,7 +39,7 @@ body {
         font-size: 2em;
         font-weight: 700;
         position: relative;
-        padding: 0 0.375em 0.0937em 0;
+        padding: 0 0.800em 0.0937em 0;
 
         &::after {
             content: '';
@@ -45,7 +57,11 @@ body {
 
 // Nav
 .nav {
+    @media (max-width: 800px) {
+        display: none;
+    }
     font-size: 0.875em;
+
     &__list {
         display: flex;
         -moz-column-gap: 3.5714em;
@@ -65,23 +81,45 @@ body {
 // -----Intro-----
 .intro {
     padding: 4.73em 0 0 0;
+
+    @media (max-width: 800px) {
+        padding: 0.1em 0 0 0;
+    }
+
     background-color: #F1F1F1;
 
     .container {
         display: flex;
         justify-content: space-between;
-        -moz-column-gap: 30px;
-             column-gap: 30px;
+        -moz-column-gap: 50px;
+             column-gap: 50px;
+
+        @media (max-width: 800px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__text {
         margin: 7.75em 0 0 0;
+        @media (max-width: 800px) {
+            margin: 2.75em 0 0 0;
+        }
     }
 
     &__title {
         font-size: 2.75em;
         font-weight: 600;
         line-height: 1.5;
+
+        @media (max-width: 800px) {
+            font-size: 1.75rem;
+        }
+    }
+
+    &__name-autor {
+        @media (max-width: 800px) {
+            font-size: 2.125rem;
+        }
     }
 
     &__subtitle {
@@ -90,16 +128,29 @@ body {
         font-weight: 400;
         line-height: 2;
         max-width: 500px;
+
+        @media (max-width: 800px) {
+            margin: 20px 0;
+        }
     }
+
+    &__img {
+        @media (max-width: 800px) {
+            width: 100%;
+        }
+    }
+
 }
 
 // -----Services-----
 .services {
-    padding: 90px 0 90px 0;
-
     &__cards {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+        }
     }
 }
 
@@ -126,10 +177,15 @@ body {
     }
 }
 
+.card + .card {
+    @media (max-width: 800px) {
+        margin-top: 60px;
+    }
+}
+
 // -----Portfolio-----
 .portfolio {
     background-color: #F1F1F1;
-    padding: 90px 0;
 
     &__title {
         text-align: center;
@@ -157,12 +213,15 @@ body {
         display: block;
         margin: 2.2222em 0 0 0;
     }
+
+    &__img {
+        width: 100%;
+    }
 }
 
 // -----Footer-----
 
 .footer {
-    padding: 90px 0;
     text-align: center;
 
     &__content {
@@ -183,6 +242,10 @@ body {
         max-width: 16.4em;
         line-height: 1.5;
         margin-top: 48px;
+
+        @media (max-width: 800px) {
+            margin-top: 28px;
+        }
     }
 
     &__btn {
@@ -202,6 +265,10 @@ body {
         &:active {
             transform: scale(1.05);
         }
+
+        @media (max-width: 800px) {
+            margin-top: 20px;
+        }
     }
 
     &__social {
@@ -209,6 +276,10 @@ body {
         justify-content: space-between;
         margin-top: 79px;
         width: 100%;
+
+        @media (max-width: 800px) {
+            margin-top: 69px;
+        }
     }
 
     &__additionally {
