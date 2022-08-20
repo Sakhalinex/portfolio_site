@@ -1,0 +1,63 @@
+// -----Intro-----
+.intro {
+    padding: 4.73em 0 0 0;
+
+    @media (max-width: 800px) {
+        padding: 0.1em 0 0 0;
+    }
+
+    background-color: #F1F1F1;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        -moz-column-gap: 50px;
+             column-gap: 50px;
+
+        @media (max-width: 800px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__text {
+        margin: 7.75em 0 0 0;
+        @media (max-width: 800px) {
+            margin: 2.75em 0 0 0;
+        }
+    }
+
+    &__title {
+        font-size: 2.75em;
+        font-weight: 600;
+        line-height: 1.5;
+
+        @media (max-width: 800px) {
+            font-size: 1.75rem;
+        }
+    }
+
+    &__name-autor {
+        @media (max-width: 800px) {
+            font-size: 2.125rem;
+        }
+    }
+
+    &__subtitle {
+        font-size: 0.875em;
+        margin: 1.4285em 0 0 0;
+        font-weight: 400;
+        line-height: 2;
+        max-width: 500px;
+
+        @media (max-width: 800px) {
+            margin: 20px 0;
+        }
+    }
+
+    &__img {
+        @media (max-width: 800px) {
+            width: 100%;
+        }
+    }
+
+}

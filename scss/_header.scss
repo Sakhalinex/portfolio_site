@@ -1,0 +1,138 @@
+// -----Header-----
+.header {
+    background-color: #F1F1F1;
+    padding: 2.875em 0 0 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        @media (max-width: 768px) {
+            align-items: center;
+        }
+    }
+
+    &__logo {
+        font-size: 2em;
+        font-weight: 700;
+        position: relative;
+        padding: 0 0.375em 0.0937em 0;
+
+        &::after {
+            content: '';
+            display: block;
+            height: 8px;
+            width: 8px;
+            background-color: #FDA300;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+// Nav
+.nav {
+    font-size: 0.875em;
+
+    &__list {
+        display: flex;
+        -moz-column-gap: 3.5714em;
+         column-gap: 3.5714em;
+
+         @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__item {
+        font-weight: 500;
+        display: flex;
+
+        &_active a {
+            color: #606060;
+        }
+    }
+}
+
+.burger {
+    height: 20px;
+    width: 33px;
+    display: none;
+    border: none;
+    position: relative;
+    background: none;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+
+    &__module {
+        transition: .1s ease-in;
+        border-radius: 50px;
+        background-color: #000;
+        height: 4px;
+        width: 33px;
+        display: block;
+        position: absolute;
+        left: 0;
+    }
+
+    &__module_1 {
+        top: 0;
+    }
+
+    &__module_2,
+    &__module_3 {
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    
+    &__module_4 {
+        bottom: 0;
+    }
+}
+
+.nav-open {
+    .burger__module {
+        background-color: #828282;
+    }
+    .burger__module_1,
+    .burger__module_4 {
+        width: 0;
+    }
+
+    .burger__module_2 {
+        transform: rotate(45deg);
+    }
+
+    .burger__module_3 {
+        transform: rotate(-45deg);
+    }
+
+    .nav__list {
+        display: block;
+        position: absolute;
+        background: rgb(255, 255, 255);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 46px 0 0 30px;
+        font-size: 2.125em;
+        font-weight: 600;
+    }
+
+    .nav__link {
+        color: #828282;
+    }
+
+    .nav__item_active a{
+        color: #090909;
+    }
+
+    .nav__item + .nav__item {
+        margin-top: 40px;
+    }
+}

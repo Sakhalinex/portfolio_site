@@ -1,0 +1,40 @@
+// -----Services-----
+.services {
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+        }
+    }
+}
+
+.card {
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+        width: 68px;
+    }
+
+    &__title {
+        font-size: 1.5em;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 0.9625em 0 0 0;
+    }
+
+    &__text {
+        font-size: 0.875em;
+        max-width: 26.4285em;
+        margin: 0.3125em 0 0 0;
+    }
+}
+
+.card + .card {
+    @media (max-width: 800px) {
+        margin-top: 60px;
+    }
+}

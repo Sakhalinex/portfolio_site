@@ -1,0 +1,36 @@
+
+// -----Portfolio-----
+.portfolio {
+    background-color: #F1F1F1;
+
+    &__title {
+        text-align: center;
+        font-size: 2.125em;
+        font-weight: 600;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 68px 0 0 0;
+    }
+}
+
+.project + .project {
+    margin-top: 90px;
+}
+
+.project {
+    &__link {
+        text-align: center;
+        font-size: 1.125em;
+        text-decoration: underline;
+        display: block;
+        margin: 2.2222em 0 0 0;
+    }
+
+    &__img {
+        width: 100%;
+    }
+}

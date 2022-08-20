@@ -1,5 +1,7 @@
-const btnNav = document.querySelector('.nav__btn')
+const burger = document.querySelector('.nav__burger'),
+      nav = document.querySelector('.nav');
 
-btnNav.addEventListener('click', () => {
-    btnNav.classList.toggle('nav-active')
+burger.addEventListener('click', () => {
+    nav.classList.toggle('nav-open')
+    
 })
