@@ -101,7 +101,7 @@
 }
 .nav-open .nav__list {
   display: block;
-  position: absolute;
+  position: fixed;
   background: rgb(255, 255, 255);
   left: 0;
   right: 0;
