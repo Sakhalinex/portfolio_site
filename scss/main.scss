@@ -33,6 +33,9 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        @media (max-width: 768px) {
+            align-items: center;
+        }
     }
 
     &__logo {
@@ -57,15 +60,16 @@ body {
 
 // Nav
 .nav {
-    @media (max-width: 800px) {
-        display: none;
-    }
     font-size: 0.875em;
 
     &__list {
         display: flex;
         -moz-column-gap: 3.5714em;
          column-gap: 3.5714em;
+
+         @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     &__item {
@@ -75,6 +79,85 @@ body {
         &-active a {
             color: #606060;
         }
+    }
+}
+
+.btn {
+    height: 20px;
+    width: 33px;
+    display: none;
+    border: none;
+    position: relative;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+
+    &__module {
+        transition: .2s;
+        border-radius: 50px;
+    }
+
+    &__module_1 {
+        height: 4px;
+        width: 33px;
+        background-color: #000;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &__module_2 {
+        height: 4px;
+        width: 33px;
+        background-color: #000;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    &__module_3 {
+        height: 4px;
+        width: 33px;
+        background-color: #000;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    
+    &__module_4 {
+        height: 4px;
+        width: 33px;
+        background-color: rgb(0, 0, 0);
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.nav-active {
+    .btn__module_1 {
+        width: 0;
+    }
+
+    .btn__module_4 {
+        width: 0;
+    }
+
+    .btn__module_2 {
+        transform: rotate(45deg);
+        background-color: #828282;
+    }
+
+    .btn__module_3 {
+        transform: rotate(-45deg);
+        background-color: #828282;
     }
 }
 
