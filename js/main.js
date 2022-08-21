@@ -3,6 +3,6 @@ const burger = document.querySelector('.nav__burger'),
 
 burger.addEventListener('click', () => {
     nav.classList.toggle('nav-open')
-    nav.classList.contains('nav-open') ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'scroll'
 
+    document.body.style.overflow = `${nav.classList.contains('nav-open') ? 'hidden' : 'scroll'}`
 })

@@ -112,7 +112,9 @@
     }
 
     .nav__list {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        row-gap: 35px;
         position: fixed;
         background: rgb(255, 255, 255);
         left: 0;
@@ -130,9 +132,5 @@
 
     .nav__item_active a{
         color: #090909;
-    }
-
-    .nav__item + .nav__item {
-        margin-top: 40px;
     }
 }
