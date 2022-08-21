@@ -140,11 +140,6 @@
     flex-wrap: wrap;
   }
 }
-@media (min-width: 500px) and (max-width: 800px) {
-  .intro .container {
-    flex-wrap: nowrap;
-  }
-}
 .intro__text {
   margin: 7.75em 0 0 0;
 }
@@ -185,7 +180,7 @@
     margin: 20px 0;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .intro__img {
     width: 100%;
   }
