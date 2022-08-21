@@ -6,3 +6,7 @@ burger.addEventListener('click', () => {
 
     document.body.style.overflow = `${nav.classList.contains('nav-open') ? 'hidden' : 'scroll'}`
 })
+
+AOS.init({
+    once: true
+});

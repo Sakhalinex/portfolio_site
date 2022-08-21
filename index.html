@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>portfolio</title>
 </head>
 <body>
@@ -41,27 +42,27 @@
     </header>
     <section class="intro">
         <div class="container">
-            <div class="intro__text">
+            <div class="intro__text" data-aos="fade-right">
                 <h1 class="intro__title"><span class="intro__name-autor">Kelvin Kramer</span><br> Designer & Developer</h1>
                 <p class="intro__subtitle">I’m a portrait, fashion and lifestyle photographer living In New York City. During my thirteen year tenure here.</p>
             </div>
-            <img class="intro__img" src="./img/intro/hero.png" alt="photo">
+            <img class="intro__img" data-aos="fade-left" src="./img/intro/hero.png" alt="photo">
         </div>
     </section>
     <section class="services">
         <div class="container">
             <div class="services__cards">
-                <div class="services__card card">
+                <div class="services__card card" data-aos="fade-down">
                     <img class="card__img" src="./img/services/01.svg" alt="design">
                     <h3 class="card__title">UI/UX Design</h3>
                     <p class="card__text">Our design is translated into comprehensive digital environments built on latest development standards.</p>
                 </div>
-                <div class="services__card card">
+                <div class="services__card card" data-aos="fade-down">
                     <img class="card__img" src="./img/services/02.svg" alt="Development">
                     <h3 class="card__title">Development</h3>
                     <p class="card__text">Our design is translated into comprehensive digital environments built on latest development standards.</p>
                 </div>
-                <div class="services__card card">
+                <div class="services__card card" data-aos="fade-down">
                     <img class="card__img" src="./img/services/03.svg" alt="software testing">
                     <h3 class="card__title">software testing</h3>
                     <p class="card__text">Our design is translated into comprehensive digital environments built on latest development standards.</p>
@@ -73,22 +74,22 @@
         <div class="container">
             <h2 class="portfolio__title">Portfolio</h2>
             <div class="portfolio__content">
-                <div class="portfolio__project project">
+                <div class="portfolio__project project" data-aos="zoom-in">
                     <img class="project__img" src="./img/portfolio/01.jpg" alt="Online fashion store">
                     <a class="project__link" href="#!">Online fashion store - Homepage</a>
                 </div>
-                <div class="portfolio__project project">
+                <div class="portfolio__project project" data-aos="zoom-in">
                     <img class="project__img" src="./img/portfolio/02.jpg" alt="Reebok Store">
                     <a class="project__link" href="#!">Reebok Store - Concept</a>
                 </div>
-                <div class="portfolio__project project">
+                <div class="portfolio__project project" data-aos="zoom-in">
                     <img class="project__img" src="./img/portfolio/03.jpg" alt="Braun Landing Page">
                     <a class="project__link" href="#!">Braun Landing Page - Concept</a>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up" data-aos-duration="1000">
         <div class="footer__content">
             <h2 class="footer__title">Contacts</h2>
             <p class="footer__subtitle">
@@ -106,6 +107,7 @@
             </p>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
